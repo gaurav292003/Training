@@ -1,0 +1,41 @@
+Build & Judge a Mini AI
+Part1
+Machine Learning → Fraud Detection
+Deep Learning → Voice Assistants 
+Computer Vision → Self Driving car
+NLP → Sentiment Analysis in Customer Reviews
+LLMs → ChatGPT for Customer Support
+
+Part2
+Model	Use Case
+1. RNN	Early speech-to-text systems
+2. LSTM	Text translation (old Google Translate)
+3. CNN	Image recognition
+4. Transformer	Predicting the next word in ChatGPT
+
+
+
+Part3
+I would use keras because its simple , high level API makes building and training a cat vs dog classifier quick and beginner friendly while leveraging TensorFlow under the hood. 
+
+	
+
+
+Part4
+•	Precision= 7/10
+      = 0.70
+      = 70%
+•	Recall = 7/12
+               = 0.5833
+	= 58.33%
+•	F1 Score = 2* Precision* Recall/(Precision + Recall)
+     = 0.64
+•	MSE/MAE 
+Error= 3
+MAE= 3
+MSE = 9
+•	BLEU would give a higher score since most candidate words match the reference, while ROUGE drops due to the missing word “sat”.
+
+
+Part5
+Your loan was rejected because your credit score was below the required threshold.
