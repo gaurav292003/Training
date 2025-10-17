@@ -1,0 +1,5 @@
+OrderID,CustomerID,Name,Email,Country,ProductID,ProductName,Category,Quantity,Price,TotalPrice,OrderDate,OrderMonth
+5,C001,Neha,neha@example.com,India,P104,Headphones,Audio,2,50,100,2025-10-05,10
+6,C002,Ali,ali@example.com,UAE,P102,Mouse,Accessories,3,20,60,2025-10-06,10
+5,C001,Neha,neha@example.com,India,P104,Headphones,Audio,2,50,100,2025-10-05,10
+0006,C002,Ali,ali@example.com,UAE,P102,Mouse,Accessories,3,20,60,2025-10-06,10
