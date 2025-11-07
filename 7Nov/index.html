@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mistral Chatbot UI</title>
+</head>
+<body style="font-family: Arial; max-width: 600px; margin: 50px auto;">
+    <h2>Mistral Chat (via OpenRouter)</h2>
+
+    <textarea id="question" rows="4" style="width:100%;" placeholder="Ask something..."></textarea><br><br>
+    <button onclick="sendQuery()">Send</button>
+
+    <h3>Response:</h3>
+    <div id="response" style="white-space: pre-wrap; border:1px solid #ccc; padding:10px; min-height:120px;"></div>
+
+<script>
+async function sendQuery() {
+    const question = document.getElementById("question").value.trim();
+    const responseBox = document.getElementById("response");
+
+    if (!question) {
+        responseBox.innerText = "⚠️ Please enter a question.";
+        return;
+    }
+
+    const res = await fetch("http://localhost:8000/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: question })
+    });
+
+    const data = await res.json();
+    console.log("Backend says:", data);
+
+    responseBox.innerText = data.response || data.detail || data.error || "No response.";
+}
+</script>
+
+</body>
+</html>
